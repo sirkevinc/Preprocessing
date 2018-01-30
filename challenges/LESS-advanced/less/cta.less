@@ -1,4 +1,9 @@
 /* Call To Action (CTA) Styles */
+.cta-button(@width, @height, @background) {
+    width: @width;
+    height: @height;
+    background: @background;
+}
 
 .cta {
     display: flex;
@@ -19,13 +24,12 @@
     .cta-text button {
         border: 1px double black;
         font-size: 16px;
-        background: white;
-        width: 170px;
-        height: 32px;
+        .cta-button(185px, 45px, #84787D);
         margin-top: 10px;
         cursor: pointer;
 
         &:hover {
+            .transition(background 3s);
             background: black;
             color: white;
         }

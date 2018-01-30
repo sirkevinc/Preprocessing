@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: blue;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background-color: green;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background-color: red;
+  }
+}
 h1,
 h2,
 h3,
@@ -162,10 +180,18 @@ header nav ul li a {
   color: #b0b0b0;
 }
 header nav ul li a:hover {
+  -webkit-transition: color 3s;
+  -moz-transition: color 3s;
+  -ms-transition: color 3s;
+  -o-transition: color 3s;
   text-decoration: underline;
   color: black;
 }
 header .logo {
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
   align-self: flex-end;
   margin: 28px 0 0 91px;
 }
@@ -188,13 +214,17 @@ header .logo {
 .cta .cta-text button {
   border: 1px double black;
   font-size: 16px;
-  background: white;
-  width: 170px;
-  height: 32px;
+  width: 185px;
+  height: 45px;
+  background: #84787D;
   margin-top: 10px;
   cursor: pointer;
 }
 .cta .cta-text button:hover {
+  -webkit-transition: background 3s;
+  -moz-transition: background 3s;
+  -ms-transition: background 3s;
+  -o-transition: background 3s;
   background: black;
   color: white;
 }
@@ -212,6 +242,9 @@ header .logo {
   justify-content: space-around;
 }
 .main-content .middle-img {
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
   display: block;
   margin: 30px auto;
 }
